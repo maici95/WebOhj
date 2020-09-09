@@ -34,16 +34,17 @@ Voitte keskustella tehtävän suoritukseen liittyvistä asioista Slackissa -
 const Person = require('./Person');
 const Athlete = require('./Athlete');
 
-console.log(new Person('mike', 'scott', 'mic', '1995'));
+console.log(new Person('mike', 'scott', 'mic', new Date('1960')));
 
-const ath = new Athlete('tom', 'scott', 'tommy', '1980', 85.5, 'tennis', []);
+const ath = new Athlete('tom', 'scott', 'tommy', new Date('1970'), 85.5, 'tennis', []);
 ath.addAchievement('US Open 2010');
 ath.addAchievement('US Open 2011');
+ath.setLinkToImg('http://www.google.com/images');
 
 console.log(ath);
 
-console.log(new Athlete('Rafael', 'Nadal', 'Rafa', 1985, 80, 'tennis', []));
-console.log(new Athlete('Lewis', 'Hamilton', 'Lewis', 1985, 70, 'f1', [2014, 2015, 2017, 2018, 2019, 2020]));
+console.log(new Athlete('Rafael', 'Nadal', 'Rafa', new Date('1980'), 80, 'tennis', []));
+console.log(new Athlete('Lewis', 'Hamilton', 'Lewis', new Date('1985'), 70, 'f1', [2014, 2015, 2017, 2018, 2019, 2020]));
 
 
 
