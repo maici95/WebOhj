@@ -11,9 +11,10 @@ export default function ajaxCall() {
 }
 
 // Get athletes
-function GET() {
+function GET(endPoint, id) {
+    const ID = id ? id : '';
     return new Promise((resolve, reject) => {
-        fetch('http://localhost:3001/athletes')
+        fetch('http://localhost:3001/'+endPoint+'/'+ID)
         .then(res => res.json())
         .then(result => {
             resolve(result);
@@ -22,10 +23,9 @@ function GET() {
 }
 
 // Delete athlete
-function DELETE(a) {
-    const aId = a.aId;
+function DELETE(endPoint, a, id) {
     return new Promise((resolve, reject) => {
-        fetch('http://localhost:3001/athletes/'+aId, {
+        fetch('http://localhost:3001/'+endPoint+'/'+id, {
             method: 'DELETE'
         })
         .then(res => res.json())
@@ -36,10 +36,10 @@ function DELETE(a) {
 }
 
 // Add new athlete
-function POST(a) {
+function POST(endPoint, a) {
     console.log(a);
     return new Promise((resolve, reject) => {
-        fetch('http://localhost:3001/athletes/', {
+        fetch('http://localhost:3001/'+endPoint, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -54,9 +54,18 @@ function POST(a) {
 }
 
 // Edit athlete
-function PUT(a) {
+function PUT(endPoint, a, id) {
     return new Promise((resolve, reject) => {
-
-        resolve(1);
+        fetch('http://localhost:3001/'+endPoint+'/'+id, {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(a)
+        })
+        .then(res => res.json())
+        .then(result => {
+            resolve(result);
+        });
     });
 }

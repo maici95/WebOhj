@@ -41,6 +41,13 @@ app.get('/athletes', (req, res) => {
             res.json(result);
         });
 });
+// Get achievements
+app.get('/achievements/:id', (req, res) => {
+    runSQL('SELECT * FROM achievements WHERE aId="'+req.params.id+'"')
+        .then(result => {
+            res.json(result);
+        });
+});
 
 // Get athlete by athelete's Id (aId)
 app.get('/athletes/:aId', (req, res) => {
@@ -60,20 +67,70 @@ app.delete('/athletes/:aId', (req, res) => {
                 res.json({msg: 'athlete removed'});
             }
         });
-})
+});
+
+// Delete achievement
+app.delete('/achievements/:id', (req, res) => {
+    runSQL('DELETE FROM achievements WHERE acId='+`${req.params.id}`)
+        .then(result => {
+            res.json({msg: 'achievement deleted'});
+        });
+});
+
 
 // Add new athlete
-app.put('/athletes', (req, res) => {
-
-    runSQL(`INSERT INTO athlete (firstNames, lastName, yob, weight, imgUrl, sport)
+app.post('/athletes', (req, res) => {
+    runSQL(`INSERT INTO athlete (firstNames, lastName, nickName, yob, weight, imgUrl, sport)
                 VALUES
-            ('${req.body.firstNames}','${req.body.lastName}','${req.body.yob}','${req.body.weight}','','${req.body.sport}')`)
+            ('${req.body.firstNames}','${req.body.lastName}','${req.body.nickName}','${req.body.yob}','${req.body.weight}','','${req.body.sport}')`)
         .then(result => {
-            console.log(result);
-            res.json({msg:'added'});
+            if (result.affectedRows < 1) {
+                res.json({msg:'New athlete added'});
+            } else {
+                res.json({msg: 'failed to add new athlete'});
+            }
         });
+});
 
+// Add achievement
+app.post('/achievements', (req, res) => {
+    runSQL(`INSERT INTO achievements (name, aId, achDate)
+                VALUES
+            ('${req.body.name}','${req.body.aId}','${req.body.achDate}')`)
+            .then(result => {
+                res.json({msg: 'achievement added'});
+            });
+});
 
+// Update athlete data
+app.put('/athletes/:aId', (req, res) => {
+    console.log(req.params);
+    runSQL(`UPDATE athlete
+                SET
+                    firstNames = "${req.body.firstNames}",
+                    lastName = "${req.body.lastName}",
+                    nickName = "${req.body.nickName}",
+                    yob = "${req.body.yob}",
+                    weight = "${req.body.weight}",
+                    sport = "${req.body.sport}"
+                WHERE aId="${req.params.aId}"
+            `)
+        .then(result => {
+
+            console.log(result);
+
+            if (result.affectedRows < 1) {
+                res.json({msg:'Athlete data edited'});
+            } else {
+                res.json({msg: 'failed to edit athlete'});
+            }
+        });
+});
+app.put('/athletes/img/:id', (req, res) => {
+    runSQL(`UPDATE athlete SET imgUrl='${req.body.imgUrl}' WHERE aId='${req.params.id}'`)
+        .then(result => {
+            res.json({msg: 'image changed'});
+        });
 });
 
 /**** API ROUTING ENDS ****/
@@ -84,9 +141,9 @@ app.put('/athletes', (req, res) => {
 function runSQL(sql) {
     return new Promise((resolve, reject) => {
         conn.query(sql, (err, res) => {
-            if (err) 
+            if (err) {
                 console.log(err);
-            
+            }
             resolve(res);
         });
     });

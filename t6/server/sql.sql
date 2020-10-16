@@ -8,12 +8,22 @@ CREATE TABLE athlete (
     aId INT NOT NULL AUTO_INCREMENT,
     firstNames VARCHAR(64),
     lastName VARCHAR(64),
+    nickName VARCHAR(64),
     yob DATE,
     weight DECIMAL(5, 2),
     imgUrl VARCHAR(255),
     sport VARCHAR(64),
     PRIMARY KEY (aId)
 );
+
+CREATE TABLE achievements (
+    acId INT NOT NULL AUTO_INCREMENT,
+    aId INT NOT NULL,
+    name VARCHAR(64),
+    achDate Date,
+    PRIMARY KEY (acId),
+    FOREIGN KEY (aId) REFERENCES athlete (aId)
+)
 
 
 insert into athlete (aId, firstNames, lastName, yob, weight, imgUrl, sport) values (1, 'Ewan', 'O''Longain', '1997-01-14', 66.55, 'http://dummyimage.com/151x210.bmp/5fa2dd/ffffff', 'Tennis');

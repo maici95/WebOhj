@@ -7,14 +7,18 @@ DataRow.HCol = DataHCol;
 DataRow.Col = DataCol;
 
 export default function DataRow(props) {
+    const style = props.style ? props.style : {};
+
     return (
-        <tr>{props.children}</tr>
+        <tr style={style}>{props.children}</tr>
     );
 }
 
 function DataHCol(props) {
+    const onClick = props.onClick ? props.onClick : null;
+
     return (
-        <th>
+        <th onClick={onClick}>
             {props.children}
         </th>
     );

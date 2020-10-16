@@ -6,15 +6,21 @@ import React from 'react';
 import { Table, Button } from 'react-bootstrap';
 import DataRow from './DataRow';
 
+import Styles from '../../styles';
+
 export default function DataTable(props) {
+
+    let rowN = 0;
 
     return (
         <Table>
             <thead>
-                <DataRow>
+                <DataRow style={Styles.DataTableHeader}>
                     {props.headers.map((item, index) =>  {
                         return (
-                            <DataRow.HCol key={index}>
+                            <DataRow.HCol key={index}
+                                onClick={() => props.sort(props.keys[index - 1])}
+                            >
                                 {item}
                             </DataRow.HCol>
                         );
@@ -24,22 +30,28 @@ export default function DataTable(props) {
             <tbody>
                 {props.data.map((item, index) => {
                     return (
-                        <DataRow key={index}>
+                        <DataRow key={index}
+                            style={{background: ++rowN % 2 === 0 ? '#fefefe' : '#f3f3f3'}}
+                        >
                             <DataRow.Col>{index + 1}</DataRow.Col>
                             {props.keys.map((key, index) => {
+                                const format = props.format.find(f => f.key === key);
+                                let value = format ? format.action(item[key]) : item[key];
+
                                 return (
                                     <DataRow.Col key={index}>
-                                        {item[key]}
+                                        {value}
                                     </DataRow.Col>
                                 );
                             })}
-                            {props.actions.map((action, index) => {
+                            {props.buttons.map((button, index) => {
                                 return (
                                     <DataRow.Col key={index}>
                                         <Button
-                                            onClick={() => action.action(item)}
+                                            variant={button.variant}
+                                            onClick={() => button.action(item)}
                                         >
-                                            {action.name}
+                                            {button.name}
                                         </Button>
                                     </DataRow.Col>
                                 );

@@ -2,11 +2,13 @@
 
 
 export default function Athlete(args) {
+    let i = 0;
     return {
-        firstNames: args[0],
-        lastName: args[1],
-        yob: new Date(args[2]).toISOString().slice(0, 10),
-        weight: parseFloat(args[3]),
-        sport: args[4]
+        firstNames: args[i++],
+        lastName: args[i++],
+        nickName: args[i++],
+        yob: new Date(args[i++]).toISOString().slice(0, 10),
+        weight: parseFloat(args[i++]),
+        sport: args[i++]
     }
 }
