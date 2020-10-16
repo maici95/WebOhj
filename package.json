@@ -1,0 +1,25 @@
+{
+  "name": "webohj",
+  "version": "1.0.0",
+  "description": "projekti blogi: https://hackmd.io/rnKF2ZXSTeCAGiDuknVtSw?edit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maici95/WebOhj.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maici95/WebOhj/issues"
+  },
+  "homepage": "https://github.com/maici95/WebOhj#readme",
+  "devDependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "react": "^16.14.0"
+  }
+}
