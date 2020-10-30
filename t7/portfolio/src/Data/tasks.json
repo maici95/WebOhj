@@ -1,0 +1,34 @@
+{
+    "tasks": [
+        {
+            "name": "Viikko 1",
+            "title": "Viikko 1",
+            "img": "js.png",
+            "desc": "Ensimmäisen viikon tehtävä tutustu javascriptin saloihin"
+        },
+        {
+            "name": "Viikko 2",
+            "title": "Viikko 2",
+            "img": "git.png",
+            "desc": "Kurssin tehtävien versionhallinta Gitin avulla GitHubissa"
+        },
+        {
+            "name": "Viikko 3",
+            "title": "Viikko 3",
+            "img": "postman.png",
+            "desc": "Postmanilla backendin testausta ennen käyttöliittymän tekoa"
+        },
+        {
+            "name": "Viikko 4",
+            "title": "Viikko 4",
+            "img": "react.png",
+            "desc": "Tutustuminen Reactin saloihin"
+        },
+        {
+            "name": "Viikko 5",
+            "title": "Viikko 5",
+            "img": "rest.png",
+            "desc": "REST API ja Reactin kytkeminen yhteen"
+        }
+    ]
+}
