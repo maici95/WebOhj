@@ -4,9 +4,11 @@
 import React from 'react';
 
 import Styles from '../../Styles';
-import { Container } from 'react-bootstrap';
+import { Container, Jumbotron } from 'react-bootstrap';
 import Task from './Task';
-import Title from '../../components/Content/Title';
+//import Title from '../../components/Content/Title';
+
+
 
 import tasks from '../../Data/tasks.json';
 
@@ -14,8 +16,13 @@ export default function Tasks() {
 
     return (
         <Container style={Styles.content}>
-            <Title>Kurssin viikkotehtävät</Title>
-            <Container className="cards-container">
+            <Jumbotron style={Styles.jumbotron}>
+                <h3>Kurssin viikkotehtävät</h3>
+                <p>
+                    Kurssin tehtävät viikko viikolta
+                </p>
+            </Jumbotron>
+            <Container className="cards-container" style={Styles.contentWrapper}>
                 {tasks.tasks.map((item, index) => {
                     return (
                         <Task
@@ -23,7 +30,7 @@ export default function Tasks() {
                             img={item.img}
                             title={item.title}
                             desc={item.desc}
-                            onClick={() => { alert('not yet') }}
+                            to={`/test:${item.id}`}
                         />
                     );
                 })}

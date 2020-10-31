@@ -1,6 +1,7 @@
 
 body {
-    background: #333;
+    background: #f9f9f9!important;
+    font-family: Roboto!important;
 }
 
 .cards-container {
