@@ -26,7 +26,7 @@ export default function Routing() {
                             Home
                         </Nav.Link>
                         <Nav.Link as={Link} to="/tasks" eventKey="tasks">
-                            Tasks
+                            Kurssin tehtävät
                         </Nav.Link>
                         <Nav.Link as={Link} to="/about" eventKey="about">
                             About

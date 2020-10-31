@@ -5,49 +5,56 @@
             "name": "Viikko 1",
             "title": "Viikko 1",
             "img": "js.png",
-            "desc": "Ensimmäisen viikon tehtävä tutustu javascriptin saloihin"
+            "desc": "HTML, CSS ja Javascript alkeet",
+            "link": "https://github.com/maici95/WebOhj/tree/master/t1"
         },
         {
             "id": "1",
             "name": "Viikko 2",
             "title": "Viikko 2",
             "img": "git.png",
-            "desc": "Kurssin tehtävien versionhallinta Gitin avulla GitHubissa"
+            "desc": "Kurssin tehtävien versionhallinta Gitin avulla GitHubissa",
+            "link": "https://github.com/maici95/WebOhj/tree/master/t2"
         },
         {
             "id": "2",
             "name": "Viikko 3",
             "title": "Viikko 3",
             "img": "postman.png",
-            "desc": "Postmanilla backendin testausta ennen käyttöliittymän tekoa"
+            "desc": "Postmanilla backendin testausta ennen käyttöliittymän tekoa",
+            "link": ""
         },
         {
             "id": "3",
             "name": "Viikko 4",
             "title": "Viikko 4",
             "img": "react.png",
-            "desc": "Tutustuminen Reactin saloihin"
+            "desc": "Tutustuminen Reactin saloihin",
+            "link": ""
         },
         {
             "id": "4",
             "name": "Viikko 5",
             "title": "Viikko 5",
             "img": "rest.png",
-            "desc": "REST API ja Reactin kytkeminen yhteen"
+            "desc": "REST API ja Reactin kytkeminen yhteen",
+            "link": ""
         },
         {
             "id": "5",
             "name": "Viikko 6",
             "title": "Viikko 6",
             "img": "port.png",
-            "desc": "Portfolion teko kurssin tehtävistä"
+            "desc": "Portfolion teko kurssin tehtävistä",
+            "link": ""
         },
         {
             "id": "6",
             "name": "Viikko 7",
             "title": "Viikko 7",
             "img": "ship.png",
-            "desc": "Laivanupotus peliin backend logiikka pelikentän generointiin"
+            "desc": "Laivanupotus peliin backend logiikka pelikentän generointiin",
+            "link": ""
         }
     ]
 }

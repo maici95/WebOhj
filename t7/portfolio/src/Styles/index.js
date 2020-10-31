@@ -40,21 +40,23 @@ const Styles = {
     card: {
         textAlign: 'center',
         minWidth: '200px',
-        maxWidth: '25%',
+        maxWidth: '30%',
         margin: '10px',
         float: 'left',
         boxShadow: '2px 2px 4px #ddd'
     },
     cardImage: {
-        padding: '20px',
+        padding: '60px',
         borderBottom: '1px solid #ddd',
         background: '#f9f9f9'
     },
     contentWrapper: {
         background: '#fff',
         border: '1px solid #ddd',
-        padding: '40px 0',
-        borderRadius: '5px'
+        paddingTop: '20px',
+        paddingBottom: '20px',
+        borderRadius: '5px',
+        marginBottom: '20px'
     }
 }
 

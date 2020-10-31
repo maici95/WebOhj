@@ -10,7 +10,9 @@ export default function About() {
 
     return (
         <Container style={Styles.content}>
-            About
+            <Container style={Styles.contentWrapper}>
+                About
+            </Container>
         </Container>
     );
 }

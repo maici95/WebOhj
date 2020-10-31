@@ -10,7 +10,7 @@ export default function Home() {
 
     return (
         <Container style={Styles.content}>
-            <Jumbotron>
+            <Jumbotron style={Styles.jumbotron}>
                 <h1>Web-ohjelmointi kurssi 2020</h1>
 
                 <h1 style={{color: 'red'}}>Toteutus hieman keskeneräinen -- Jatkuu mikäli tarkistus ei ole tapahtunut samantien deadlinin jälkeen</h1>
