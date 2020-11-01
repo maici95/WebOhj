@@ -58,7 +58,12 @@ export default function TaskOverview(props) {
                     <h3>{task.title}</h3>
                     <Container style={Styles.contentWrapper}>
                         <p>{task.desc}</p>
-                        <b>GitHub:</b> <a href={task.link}>{task.link}</a>
+                        <b>GitHub:</b> {task.link && task.link.split('|').map((item, index) => {
+                            return (
+                                <a key={index} href={item}>{item} </a>
+                            );
+                        })
+                        }
                     </Container>
 
                     {text && text.parags && text.parags.length > 0 &&

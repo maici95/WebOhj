@@ -6,7 +6,7 @@
             "title": "Viikko 1",
             "img": "js.png",
             "desc": "HTML, CSS ja Javascript alkeet",
-            "link": "https://github.com/maici95/WebOhj/tree/master/t1"
+            "link": "https://github.com/maici95/WebOhj/tree/master/t1|https://github.com/maici95/WebOhj/tree/master/t2"
         },
         {
             "id": "1",
@@ -14,7 +14,7 @@
             "title": "Viikko 2",
             "img": "git.png",
             "desc": "Kurssin tehtävien versionhallinta Gitin avulla GitHubissa",
-            "link": "https://github.com/maici95/WebOhj/tree/master/t2"
+            "link": "https://github.com/maici95/WebOhj/tree/master/t3_urheilu1"
         },
         {
             "id": "2",
@@ -22,7 +22,7 @@
             "title": "Viikko 3",
             "img": "postman.png",
             "desc": "Postmanilla backendin testausta ennen käyttöliittymän tekoa",
-            "link": ""
+            "link": "https://github.com/maici95/WebOhj/tree/master/t4"
         },
         {
             "id": "3",
@@ -30,7 +30,7 @@
             "title": "Viikko 4",
             "img": "react.png",
             "desc": "Tutustuminen Reactin saloihin",
-            "link": ""
+            "link": "https://github.com/maici95/WebOhj/tree/master/t5"
         },
         {
             "id": "4",
@@ -38,7 +38,7 @@
             "title": "Viikko 5",
             "img": "rest.png",
             "desc": "REST API ja Reactin kytkeminen yhteen",
-            "link": ""
+            "link": "https://github.com/maici95/WebOhj/tree/master/t6"
         },
         {
             "id": "5",
@@ -46,7 +46,7 @@
             "title": "Viikko 6",
             "img": "port.png",
             "desc": "Portfolion teko kurssin tehtävistä",
-            "link": ""
+            "link": "https://github.com/maici95/WebOhj/tree/master/t7/portfolio"
         },
         {
             "id": "6",
@@ -54,7 +54,7 @@
             "title": "Viikko 7",
             "img": "ship.png",
             "desc": "Laivanupotus peliin backend logiikka pelikentän generointiin",
-            "link": ""
+            "link": "https://github.com/maici95/WebOhj/tree/master/t8"
         }
     ]
 }

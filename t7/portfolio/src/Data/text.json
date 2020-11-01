@@ -3,6 +3,11 @@
         {
             "id": "0",
             "parags": [
+                "Aloitus viikolla tein kaksi tehtävää, joista ensimmäinen oli sovellus, joka tarkistaa sanan onko se palindromi. Toinen tehtävä sen sijaan oli komentorivi sovellus, jolla käyttäjä pystyy hallitsemaan puhelinluettolotietoja.",
+                "Oma toteutus palindromi tehtävässä oli yksinkertainen, joka koostui sanan läpikäymisestä alusta ja lopusta yhtäaikaisesti. Eli molemmilta puolilta otetaan merkki tarkistukseen ja näitä verrataan keskenään. Mikäli merkit ovat erilaiset, niin sana ei ole palidromi ja funktio palauttaa epätoden. Sen sijaan jos merkit ovat samoja liikutaan molemmilta puolilta keskemmälle yksi askel ja verrataan merkkejä uudestaan keskenään. Tätä toimenpidettä toistetaan niin pitkään kun merkkejä on jäljellä.<br/> Puhelinluettelo tehtävässä toteutin luokan puhelinluettolosta, jolta löytyy metoja kontaktin lisäämiseen, kontaktejen listaamiseen sekä kontaktin etsimeen nimen perusteella. Itse sovellus pyörittää while looppia, jossa pysytään niin pitkään, kunnes käyttäjä antaa poistumiskomennon, jolloin sovellus sulkeutuu. Käyttäjä siis kirjoittaa komentoriville haluamansa toimin, jonka jälkeen se suoritetaan ja palataan lähtötilanteeseen, jolloin käyttäjä voi antaa uuden komennon. Komentoja sovelluksesta löytyy kontaktin lisäämiseen, kontaktejen listaamiseen, kontaktin etsimiseen sekä komentojen listaaminen.",
+                "Suoranaisesti mitään uutta en oppinut tällä viikolla, sillä Javascript on aika hyvin itselläni hallussa. Tämä johtuu todennäköisesti siitä, että vapaa-ajallani olen toteuttanut paljon asioita Javascriptiä käyttäen. Vaikka tämän kurssin tehtävät olivat helppoja itselleni suhteessa siihen, mitä tiedän kurssin aiheista entuudestaan, niin pystyin keskittymään enemmän toteutustapaan, kuin uuden oppimiseen, jolloin tehtäviä tehdessä itselläni oli hyvin erinlainen lähestymistapa tehdä tehtävä kuin, mitä se olisi ollut, jos en olisi tiennyt mitään kurssin aiheista.",
+                "Palindromi tehtävässä näyttäisi siltä, että \"osoittimet\" menevät päästä päähän, jolloin sana tarkistetaan käytännössä kahdesti, mikäli sana on palidromi. Muuten tehtävät näyttäisi siltä, että ne menivät melko hyvin.",
+                "Toteutukset näyttäisi olevan selkeitä, joten tehtävät onnistuivat mielestäni ainakin keskivertoisesti, tietenkin joitain pieniä muutoksia voisi aina tehdä, mutta kokonaisuutena olen tyytyväinen tehtäviin."
             ],
             "subTitles": [
                 "Mitä tein",
@@ -15,6 +20,11 @@
         {
             "id": "1",
             "parags": [
+                "Tämän viikon tehtävässä oli tarkoitus tehdä luokkia käyttämällä pääluokka ja periä siitä aliluokka. Pääluokka tehtävässä oli henkilö, jolta löytyi henkilölle ominaisia arvoja. Tästä perittiin urheilija luokka, jolle lisättiin urheilijalle ominaisia arvoja. Tällä viikolla oli myös tarkoitus ottaa versionhallinta tehtävien säilyttämiseen, mutta tein sen jo ensimmäisellä viikolla.",
+                "Toteutin ensimmäiseksi henkilö luokan, jolle tein getterit ja setterit. Tämän jälkeen tein urheilija luokan, jonka perin henkilöstä ja lisäsin sille arvoja ja niiden getterit ja setterit.",
+                "Tämän viikon oppimani asiat jäivät hyvin pieneksi kokonaisuudeksi lähestulkoon olemattomaksi, sillä tehtävän asiat olivat jo opittua asiaa itselläni.",
+                "Tehtävänantoon nähden oma toteutus pitäisi olla yhdenmukainen, jolloin mahdollisuutta toisin tekemiseen ei ole.",
+                "Tehtävä onnistui omasta mielestäni hyvin, tosin tehtävää tehdessäni olin syystä tai toisesta jättänyt yhden arvon pois urheilija luokalta, jolloin tehtävän täydentämisen jälkeen se oli valmis. Näin ollen panostin tuleviin tehtäviin lukemalla tehtävänannon tarkemmin."
             ],
             "subTitles": [
                 "Mitä tein",
@@ -27,6 +37,11 @@
         {
             "id": "2",
             "parags": [
+                "Viikon tehtävänä oli toteuttaa backend NodeJS:llä sekä MariaDB:llä, jossa käyttäjä pystyy hakemaan, lisäämään, päivittämään sekä poistamaan tietueita tietokannasta.",
+                "Tehtävässä oli valmis pohja, johon tuli lisätä yllä mainitsemani toiminnallisuudet. Tehtävä käytännössä oli SQL- lauseiden tekeminen ja tietokannan kutsujen vastauksien lähettäminen käyttöliittymään, joka tässä tehtävässä oli PostMan.",
+                "Tämäkin tehtävä onnistui hyvin pitkälti aiemman tietämyksen perusteella, jolloin niin sanotusti oppimista ei tapahtunut uuden asian osalta.",
+                "Toteutus tehtävässä on mielestäni sotkuinen ja sen olisi voinut tehdä paremminkin, joten lopputuloksen siistiminen olisi asia, jonka olisin voinut tehdä.",
+                "Puhtaasti tarkastellessa toiminnallisuutta tehtävän lopputulos oli melko hyvä, joten tehtävä onnistui kohtalaisesti."
             ],
             "subTitles": [
                 "Mitä tein",
@@ -39,6 +54,11 @@
         {
             "id": "3",
             "parags": [
+                "Tällä viikolla oli tarkoitus toteuttaa käyttöliittymä viime viikon backend toteutukselle, jossa käyttäjälle listataan tietueet tietokannasta sekä Reactiin tutustuminen.",
+                "Totetustapani tehtävässä oli luoda komponentteja, joilla saataisiin luotua taulukko, johon lisättiin tietokannasta haettu data. Tehtävä oli hyvin suoraviivainen, joten kertomista itse toteutustavasta ei niinkään synny.",
+                "Kuten aiemmilta viikoilta tuli nähtyä, niin itse uutta asiaa ei ilmennyt viikolla, jolloin pystyin siirtämään painon kokonaan toteutustapaan. Näin sain käytännössä maksimaalisen tehon irti tehtävistä, sillä kokonaisuus toteutuksessa omasta mielestäni oli jo melko hyvä.",
+                "Tämän viikon tehtävästä pitäisi etsiä tarkasti asiaa, jonka olisin tehnyt toisin.",
+                "Olen hyvin tyytyväinen tehtävän lopputulokseen."
             ],
             "subTitles": [
                 "Mitä tein",
@@ -51,6 +71,11 @@
         {
             "id": "4",
             "parags": [
+                "Tämän viikon tehtävänä oli toteuttaa palvelinsovellus, jossa käyttäjä voi hallita urheilijoita. Palvelin rakennettiin NodeJS:llä käyttäen expressiä, josta oli yhteys MariaDB:hen, missä sen sijaan itse tieto säilytettiin. Käyttöliittymä tehtiin Reactilla, jossa käyttäjä pystyy hakemaan, lisäämään, muokkaamaan ja poistamaan urheilijoita tietokannasta. Lisäksi tehtävässä otettiin käyttöön Bootstrap, jolla saataisiin parempi visuualinen ilmi käyttöliittymään",
+                "Palvelin on toteutettu expressillä, jossa on reitit tarvittaville palvelin kutsuille urheilijoiden hakemiseen, lisäämiseen, poistamineen ja muokkaamiseen. Lisäksi urheilijoille on toteutettu erikseen saavutukset, jotka ovat linkitetty urheilijan id:n mukaan.<br/>Käyttöliittymä on toteutettu Reactilla, johon on luotu komponentteja, joilla saadaan tietokannan urheilijat ja heidän saavutukset näytettyä käyttäjälle. Käyttöliittymässä on hyödynnetty Reactin bootstrappia, joilla ulkoasu on saatu hieman miellyttävämmäksi käyttäjälle.",
+                "React oli jo entuudestaan tuttu itselleni, joten niin sanotusti uutta ei tälläkään viikolla tullut opittua. Sen sijaan toteutustapaa tuli pohdittua tarkemmin, tosin tähän olisi voinut käyttää hieman enemmän aikaa, jotta lopputulos oli ollut vielä parempi.",
+                "Järjestelmän käytettävyyden kannalta se ei ole paras mahdollinen, joten ennen tehtävän tekoa olisin voinut hahmotella minkälaisen toteutuksen käyttöliittymästä tulen tekemään. Tosin mielessäni oli aika selvä kuva siitä minkälainen käyttöliittymän tulisi olla, joten tehtävän tekeminen alkoi käyttöliittymän prototyypin teolla, josta se sitten muokkautui lopputulokseksi.",
+                "Lopputulokseen olen tyytyväinen, sillä komponentteja voitaisiin uudelleenkäyttää, tosin joissain komponenteissa on vielä parannettavaa, joten järjestelmän kokonaisuus ei ole täydellinen. Lisäksi koodia olisi voinut vielä siistiä, jotta toteutusta olisi ulkopuolisen helpompi tutkia."
             ],
             "subTitles": [
                 "Mitä tein",
@@ -63,6 +88,11 @@
         {
             "id": "5",
             "parags": [
+                "Viikon tehtävänä oli luoda portfolio kurssilla tehdyille tehtäville, jossa jokainen tehtävä esitetään lukijalle. Lopputuloksena sivulla tulisi olla selkeä rakenne, jossa kävisi selville, mistä kurssilla on kyse, mitä tehtäviä tein sekä mitä kurssista sain irti.",
+                "Oma toteutus näköjään saattoi poiketa tehtävän annosta aika suuresti, sillä tehtävänannossa lukee: \"Käytä layoutin toteuttamiseen erityisesti Bootstrap-komponentteja (kts. https://startbootstrap.com/)\", joten tämän osalta tehtävä on tältä osin virheellinen. Bootstrapin sijaan käytän portfoliossani Reactin bootstrappia.<br/>Käytin portfolioni teossa suoraviivaista lähestymistapaa, jossa tiedon olen tallentanut json formaattiin, jonka käyttöliittymä lukee ja käsittelee sen lukijalle lueattavaan muotoon. Tallensin sivulla olevan tiedon kahteen eri tiedostoon, joista ensimmäinen on kurssin viikot taulukossa. Näissä alkioissa on kaikki oleellinen tieto, joka näytettään lukijalle tehtävien listausnäkymässä. Toinen tiedosto pitää sisällään itse jokaisen viikon tehtävien selitykset, jotka käyttäjä pystyy lukemaan kunkin viikon omalla sivullaan.<br/>Kuten jo mainitsin aiemmin, niin käytän Reactia portfolion teossa. Toteutukseen lisäsin Reactin bootstrapin, jonka komponentteja hyödynnän sivujen rakentamisessa. Navigoinnin sivulla hoitaa react router, joka mahdollistaa SPA (single-page application) toteutuksen.<br/>Portfolio pitää sisällään kotisivun, jossa käyn läpi kurssin olennaisia asioita. Kurssin tehtävät sivun, jonne on listattu kurssilla tekemäni tehtävät, joissa on painike tehtävän tarkempaan katselmointiin. Tehtävän näkymä pitää sisällään selityksen tehtävästä mitä ja miten tein sekä itsearvioinnin tehtävästä. Viimeisenä sivuna on about sivu, joka pitää sisällään analysoinnin kurssista omalta kohdaltani, jossa käyn läpi kurssin vaikutusta omaan oppimiseeni.",
+                "Kurssin tehtävät olivat oppimisen kannalta enemmänkin asioita, jotka mahdollistivat suurimman osa keskittymiseni kohdistamisen itse toteutukseen, jonka myötä ilmeni \"oivalus hetkiä\" itselleni. Nämä hetket olivat käytännössä jatkuva oman tekemiseni analysointi ja pohdinta toteutustavoistani mitä, miten, miksi teen asioita juuri näin.",
+                "Toteutus on aikalailla maksimia, mitä tämän hetken tiedoillani pystyn toteuttmaan, joten parannettavia kohteita on vaikea lähteä etsimään, kun paremmasta ei ole tietoa. Näin ollen tulevaisuudessa asioita tehdessäni ja uusien oivalluksien myötä pystyn miettimään tämän kurssin asioita ja huomaamaan, kuinka tein asioita \"väärällä\" tavoilla.",
+                "Kokonaisuutena portfolion teko onnistui melko hyvin, joten olen tyytyväinen lopputulokseen. Portfolion ulkoasu ylitti huomattavasti omat odotukseni, jotka olin asettanut ennen tehtävän aloittamista. Portfolion uudelleenkäyttämisen mahdollisuuteen olen hyvin tyytyväinen, sillä portfolio mahdollistaa helposti Plug&Play tapaisen käytön toisen kurssin tehtävien esittelyyn. Toki portfolio kaipaisi vielä jatkokehittämistä mahdollistaakseen näyttävämmän tehtävien esittelyformaatin, mutta voisin väittää, että tämän hetkinen verio on ainakin samalla tasolla kuin, mitä se on esim. word tiedoton kanssa."
             ],
             "subTitles": [
                 "Mitä tein",
@@ -75,6 +105,11 @@
         {
             "id": "6",
             "parags": [
+                "Tämä tehtävä ei ollut pakollinen, mutta tehtävänanto oli mielenkiintoinen, joten päätin toteuttaa tehtävän siitä huolimatta. Itse tehtävässä tarvittiin toteuttaa backend laivanupotus pelille, joka generoi pelialueen ja siihen yhden laivan. Lisäksi tehtävään oli mahdollista luoda käyttöliittymä, jolla voitaisiin tutkia backendin palauttamaa pelialuetta.",
+                "Lähestymistapa tehtävään itselläni oli luoda skaalattava logiikka, jolle voitaisiin antaa pelialuuen koko sekä laivan pituus. Näin ollen logiikan tekeminen vaikeutuisi hieman, mutta lopputulos olisi parempi ja samalla omat taito joutuisivat mahdollisesti koetukselle.<br/>Ensimmäiseksi toteutin matrixin tekevän funktion, jolle annettaisiin parametreinä haluttu matrix koko. Näiden avulla luotaisiin matrix, joka palautetaan tyhjänä.<br/>Seuraavaksi toteutin funktion, jolla generoitaisiin laiva äsken luotuun matrixiin. Kyseinen funktio ottaa vastaan matrixin ja laivan koon, joiden avulla matrixiin lisätään laiva ja matrix palautetaan takaisin täytettynä. Laivan lisääminen matrixiin aloitetaan generoimalla satunnainen piste matrixissä, jonka jälkeen tutkitaan minne suuntaan laiva pystyy kasvamaan. Eli laivan aloituspisteen jokainen suunta käydään läpi (ylös, oikealla, alas, vasemmalle) mahtuuko laivan loppuosa kyseiseen suuntaan. Jos laiva on vasemassa ylänurkassa, niin laiva ei pysty kasvamaan vasemmalle eikä ylöspäin, joten vaihtoehdoiksi jää oikealle sekä alas. Näistä vaihtoehdoista valitaan satunnaisesti yksi, jonka jälkeen laiva lisätään itse matrixiin.",
+                "Kuten muutkin tehtävät tällä kurssilla mitään uutta ei tullut opittua tätä tehtävää tehdessäni. Sen sijaan tehtävän toteutusta tuli pohdittua hyvin syvällisesti ja pyrkiä mahdollisimman hyvään lopputulokseen.",
+                "Kokonaisuutena tehtävä omasta mielestäni onnitui todella hyvin. Toisaalta tehtävän keskivaiheessa toteutustapaa täytyi hieman uudelleen miettiä, sillä funktion toteutus eli aika vapaasti toteutuksen aikana. Tämä johti koodin siistimiseen aika-ajoin, jonka myötä koodista löytyy yksi hieman suurempi vika, joka on se, että funtkio voi mahdollisesti palauttaa epätoden, jolloin funktiota kutsuttaessa tämä pitää ottaa huomioon.",
+                "Toimiva kokonaisuus lopputuloksena, joka mielestäni on melko hyvä. Toteutus ei ollut hankala missään vaiheessa, toki tehtävän toteutustapaa olisin voinut hieman lisätä tehdessäni tehtävää."
             ],
             "subTitles": [
                 "Mitä tein",
